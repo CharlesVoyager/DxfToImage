@@ -84,10 +84,10 @@ namespace DxfToImage
 
                 if (DestFolder != "")
                 {
-                    string newFile = DestFolder + Path.GetFileNameWithoutExtension(dxfFullName);
+                    string newFile = DestFolder + Path.GetFileNameWithoutExtension(dxfFullName) + ".png";
                     if (File.Exists(newFile))
                         File.Delete(newFile);
-                    ConvertedImage.Save(newFile + ".png", imageFormat);
+                    ConvertedImage.Save(newFile, imageFormat);
                 }
             }
         }

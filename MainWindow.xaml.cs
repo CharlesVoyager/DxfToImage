@@ -47,9 +47,9 @@ namespace DxfToImage
 
                 // Layer0.dxf ==> Layer0.png
                 DxfToImg dxfToImg = new DxfToImg();
-                dxfToImg.Convert(FileNameLabel.Content.ToString(), 
-                    System.Drawing.Imaging.ImageFormat.Png, 
-                    System.Windows.Forms.Application.StartupPath + System.IO.Path.DirectorySeparatorChar);
+                dxfToImg.Convert(   FileNameLabel.Content.ToString(), 
+                                    System.Drawing.Imaging.ImageFormat.Png, 
+                                    System.Windows.Forms.Application.StartupPath + System.IO.Path.DirectorySeparatorChar);
 
                 string pngFile = System.Windows.Forms.Application.StartupPath + System.IO.Path.DirectorySeparatorChar + 
                     System.IO.Path.GetFileNameWithoutExtension(FileNameLabel.Content.ToString()) + ".png";

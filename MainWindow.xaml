@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DxfToImage"
         mc:Ignorable="d"
-        Title="MainWindow" ResizeMode="NoResize" Height="620" Width="620">
+        Title="DXF to Image V1.0" ResizeMode="NoResize" Height="620" Width="620">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"></RowDefinition>
