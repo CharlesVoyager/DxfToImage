@@ -54,9 +54,11 @@ namespace DxfToImage
                 string pngFile = System.Windows.Forms.Application.StartupPath + System.IO.Path.DirectorySeparatorChar + 
                     System.IO.Path.GetFileNameWithoutExtension(FileNameLabel.Content.ToString()) + ".png";
 
+
                 // Display the image
                 BitmapImage bitmap = new BitmapImage();
                 bitmap.BeginInit();
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
                 bitmap.UriSource = new Uri(pngFile);
                 bitmap.EndInit();
 
